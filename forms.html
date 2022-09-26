@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+    <form method="get" action="search">
+        <h4>GET form</h4>
+        <input type="text" name="q">
+        <button type="submit">SEARCH</button>
+    </form>
+
+    <form method="post" action="mailform.php">
+        <h4> POST form</h4>
+        <input name="sender" type="text">
+        <input content="sender" type="text">
+        <button type="submit"> SEND</button>
+    </form>
+    <h4>More Inputs</h4>
+    <input type="checkbox"
+    name="checkboxOne" value="1"/>1
+    <input type="checkbox"
+    name="checkboxTwo" value="2"/>=2
+
+    <fieldset> 
+        <legend>Question 1:</legend>
+        <input type="radio" name="mc"
+            value="a"/>a
+        <input type="radio" name="mc"
+            value="b"/>b
+        <input type="radio" name="mc"
+            value="c"/>c
+        <input type="radio" name="mc"
+            value="d"/>d
+    </fieldset>
+<br>
+<br>
+    <form>
+        <legend>Your Basic Info</legend>
+        <div class="row mb-3">
+          <label for="inputName3" class="col-sm-2 col-form-label">Name:</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputName3">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3">
+            </div>
+          </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Gender:</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+              <label class="form-check-label" for="gridRadios1">
+                Male
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+              <label class="form-check-label" for="gridRadios2">
+                Female
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row mb-3">
+          <div class="col-sm-10 offset-sm-2">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck1">
+              <label class="form-check-label" for="gridCheck1">
+                Do you agree to the terms and conditions?
+              </label>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign in</button>
+      </form>
+    
+    <form method="post" action="index.html">
+        <h1>Sign up form</h1>
+        <fieldset>
+            <legend>Your Basic Info</legend>
+            <label for="name">Name:</label>
+            <input type="text" name="Name"/>
+            <br>
+            <label for="Email">Email:</label>
+            <input type="text" name="Email"/>
+            <br>
+            <label for="Password">Password:</label>
+            <input type="text" name="Password"/>
+            <br>
+            <label>Gender:</label>
+            <br>
+            <input type="radio" name="gender" value="male"/>Male
+            <br>
+            <input type="radio" name="gender" value="female"/>Female
+        </fieldset>
+        <button type="submit">Sign Up</button>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/
+    bootstrap.min.js" 
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
